@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "review-restaurants"
+version = "0.1.0"
+description = "Sign up with a username and review restaurants."
+authors = ["Daniela Rus Morales <danirus@eml.cc>"]
+
+[tool.poetry.dependencies]
+python = "^3"
+
+[tool.poetry.dev-dependencies]
+coverage = "^5.5"
+
+[build-system]
+requires = ["poetry>=1.1,<1.2"]
+build-backend = "poetry.masonry.api"
+
+[tool.black]
+line-length = 80
