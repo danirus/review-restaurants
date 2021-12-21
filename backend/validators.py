@@ -1,5 +1,8 @@
 import re
+from datetime import datetime
 from typing import Callable
+
+import pytz
 
 from pydantic import validator
 
@@ -18,4 +21,16 @@ def no_whitespace(value: str) -> str:
     pattern = re.compile(r"\s+")
     if pattern.search(value):
         raise ValueError("String may not contain whitespace!")
+    return value
+
+
+def is_tz_aware(value: datetime) -> datetime:
+    if value.tzinfo is None:
+        raise ValueError("Datetime must be timezone aware!")
+    return value
+
+
+def is_country_code(value: str) -> str:
+    if not value.upper() in pytz.country_names:
+        raise ValueError("Country must be a valid ISO-3166 2-digit code.")
     return value

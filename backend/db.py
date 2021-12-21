@@ -1,4 +1,3 @@
-from contextlib import asynccontextmanager
 from os import getenv
 
 from sqlalchemy.ext.asyncio import AsyncSession, create_async_engine
@@ -19,11 +18,7 @@ async_session = sessionmaker(
 Base = declarative_base()
 
 
-# @asynccontextmanager
 async def get_db():
-    # async with async_session() as session:
-    session = async_session()
-    try:
+    async with async_session() as session:
         yield session
-    finally:
         await session.close()

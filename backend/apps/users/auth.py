@@ -8,7 +8,7 @@ from backend.config import get_settings
 oauth2_access_scheme = OAuth2PasswordBearer(tokenUrl="/api/v1/token_form")
 oauth2_refresh_scheme = OAuth2PasswordBearer(
     tokenUrl="/api/v1/refresh_token_form",
-    scheme_name="OAuth2PasswordBearerRefresh"
+    scheme_name="OAuth2PasswordBearerRefresh",
 )
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 
@@ -32,9 +32,11 @@ class AuthJWTScoped(AuthJWT):
         ]
         if missing_scopes:
             msg = f"Not enough permissions! Missing scopes: {missing_scopes}"
-            raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED,
-                                headers={"WWW-Authenticate": "Bearer"},
-                                detail=msg)
+            raise HTTPException(
+                status_code=status.HTTP_401_UNAUTHORIZED,
+                headers={"WWW-Authenticate": "Bearer"},
+                detail=msg,
+            )
 
 
 def verify_password(plain_password: str, hashed_password: str) -> bool:

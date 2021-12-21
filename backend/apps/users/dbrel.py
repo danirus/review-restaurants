@@ -6,7 +6,6 @@ from sqlalchemy_utils import UUIDType
 
 from backend.db import Base
 
-# pylint: disable=too-few-public-methods
 
 association_table = Table(
     "user_security_scopes",

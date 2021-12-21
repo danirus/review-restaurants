@@ -7,10 +7,38 @@ from fastapi_jwt_auth.exceptions import AuthJWTException
 from starlette.middleware.cors import CORSMiddleware
 
 from backend import deps
+from backend.apps.restaurants import restaurants_router
 from backend.apps.users import users_router
 
 
-app = FastAPI()
+tags_metadata = [
+    {
+        "name": "Users",
+        "description": (
+            "Manage authorization tokens, do the signup of regular "
+            "users, create or update users passing their scopes, "
+            "list users, etc."
+        ),
+    },
+    {
+        "name": "Restaurants",
+        "description": "Create, read, list, update and delete restaurants.",
+    },
+    {
+        "name": "Reviews",
+        "description": (
+            "Create a review of a restaurant, update it, read it,"
+            "and list reviews."
+        ),
+    },
+]
+
+
+app = FastAPI(
+    title="Review Restaurants API Service",
+    version="0.1.0",
+    openapi_tags=tags_metadata,
+)
 
 origins = ["http://localhost:3000", "https://rest.aurant.reviews"]
 
@@ -42,7 +70,8 @@ def authjwt_exception_handler(request: Request, exc: AuthJWTException):
 
 kwds = {"dependencies": [Depends(deps.check_jwt)]}
 
-app.include_router(users_router)
+app.include_router(users_router, tags=["Users"])
+app.include_router(restaurants_router, tags=["Restaurants"], **kwds)
 
 
 # --------------------------------------

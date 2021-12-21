@@ -8,6 +8,7 @@ from sqlalchemy.ext.asyncio import AsyncSession
 from backend.apps.users import auth, crud, models
 from backend.db import get_db
 
+
 router = APIRouter()
 
 
