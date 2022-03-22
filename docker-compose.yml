@@ -1,0 +1,49 @@
+version: "3.7"
+
+services:
+  postgres:
+    image: postgres:latest
+    environment:
+      POSTGRES_USER: revrest
+      POSTGRES_PASSWORD: secret
+      POSTGRES_DB: revrest
+    volumes:
+      - postgresql_data:/var/lib/postgresql/data/
+    expose:
+      - 5432
+    ports:
+      - 5432:5432
+
+  backend:
+    container_name: backend
+    hostname: backend
+    build:
+      context: .
+    volumes:
+      - ./:/backend/
+    command: bash -c "uvicorn backend.main:app --reload --host 0.0.0.0 --port 8100"
+    environment:
+      ALEMBIC_URI: postgresql://revrest:secret@postgres:5432/revrest
+      DATABASE_URI: postgresql+asyncpg://revrest:secret@postgres:5432/revrest
+      SECRET_KEY: "d158eafd405f22bad2fba31ec397b43d3373bfe995aa7d327b37f90857da7b01"
+    expose:
+      - 8100
+    ports:
+      - 8100:8100
+    depends_on:
+      - postgres
+
+  frontend:
+    container_name: frontend
+    hostname: frontend
+    build:
+      context: frontend
+    volumes:
+      - ./frontend:/frontend/
+    expose:
+      - 3000
+    ports:
+      - 3000:3000
+
+volumes:
+  postgresql_data:

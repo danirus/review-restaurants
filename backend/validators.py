@@ -34,3 +34,9 @@ def is_country_code(value: str) -> str:
     if not value.upper() in pytz.country_names:
         raise ValueError("Country must be a valid ISO-3166 2-digit code.")
     return value
+
+
+def is_between_1and5(value: int) -> int:
+    if value < 1 or value > 5:
+        raise ValueError("Ratings must be between 1 and 5.")
+    return value

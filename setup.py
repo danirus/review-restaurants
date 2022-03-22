@@ -23,9 +23,4 @@ setup(
     long_description=long_description,
     packages=find_packages('.'),
     install_requires=install_requires,
-    entry_points={
-        'console_scripts': [
-            'create_superadmin = bin.create_superadmin:run',
-        ]
-    }
 )

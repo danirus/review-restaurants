@@ -1,0 +1,47 @@
+{
+  "db": {
+    "security_scopes": [
+      {
+        "id": "6b42f1a8-1711-4121-93d1-28583d25638c",
+        "name": "users:me",
+        "description": ""
+      },
+      {
+        "id": "e2546622-f9b5-4f30-8249-6e8a21dc644f",
+        "name": "users:read",
+        "description": ""
+      },
+      {
+        "id": "2b5d5289-86da-4335-9d45-394c045bff9e",
+        "name": "users:write",
+        "description": ""
+      }
+    ],
+    "users": [
+      {
+        "id": "0e9c2fde-0925-4736-8448-8acb4da06f31",
+        "username": "sadmin",
+        "password": "secret",
+        "scopes": ["users:me", "users:read", "users:write"]
+      },
+      {
+        "id": "5333fe2a-947f-41ad-ab4b-420eceab1113",
+        "username": "user_a",
+        "password": "secret",
+        "scopes": ["users:me"]
+      },
+      {
+        "id": "e4180dd3-05ef-42bc-ab17-748b1b4acd71",
+        "username": "user_b",
+        "password": "secret",
+        "scopes": ["users:me", "users:read"]
+      },
+      {
+        "id": "f952a88e-1f78-4b5d-bc59-5b887bd21f5b",
+        "username": "user_c",
+        "password": "secret",
+        "scopes": []
+      }
+    ]
+  }
+}

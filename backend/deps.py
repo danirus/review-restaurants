@@ -1,6 +1,6 @@
 from fastapi import Depends
 
-from backend.apps.users.auth import AuthJWTScoped, oauth2_access_scheme
+from backend.users.auth import AuthJWTScoped, oauth2_access_scheme
 
 
 async def check_jwt(

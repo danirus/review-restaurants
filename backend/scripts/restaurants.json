@@ -1,0 +1,227 @@
+[
+    {
+        "name": "Gasthof Hotel Zur Post",
+        "description": "Bavarian cuisine and beers at a country pub/eatery with rooms, plus a relaxed bistro and a beer garde.",
+        "country": "DE",
+        "postal_code": "82211",
+        "address": "Andechsstrasse 1",
+        "webpage": "https://post-herrsching.de/",
+        "phone_number": "08152 - 396 27 0"
+    },
+    {
+        "name": "Bräustüberls Schloss Seefeld",
+        "description": "Nice old style and large restaurant within the Seefeld Castle. They serve good Bavarian food and drinks. Their dessers are really good too.",
+        "country": "DE",
+        "postal_code": "82229",
+        "address": "Schlosshof 4c",
+        "webpage": "https://www.braeustueberl-seefeld.de",
+        "phone_number": "08152 99120"
+    },
+    {
+        "name": "Döneria Feinkost",
+        "description": "This is the place to go if you want to have a Donner Kebap. It is fast, attendants are nice and smile often, and the food is delicious.",
+        "country": "DE",
+        "postal_code": "82211",
+        "address": "Bahnhofstrasse, 7",
+        "webpage": "",
+        "phone_number": "0173 8880089"
+    },
+    {
+        "name": "Brauhaus Herrsching",
+        "description": "Beer garden and Bavarian restaurant. With a large menu and lot of beer to offer. We like to dress up like in the middle ages.",
+        "country": "DE",
+        "postal_code": "82211",
+        "address": "Mühlfeld 13",
+        "webpage": "https://www.brauhaus-herrsching.de/start.html",
+        "phone_number": "08152 9987600"
+    },
+    {
+        "name": "Colosseum",
+        "description": "Italian Restaurant, with nearly the best Tiramisu, all sort of Pizzas and Pasta. We can bring the food to you too.",
+        "country": "DE",
+        "postal_code": "82211",
+        "address": "Bahnhofstrasse 5",
+        "webpage": "https://colosseum-herrsching.jimdofree.com",
+        "phone_number": "08152 6428"
+    },
+    {
+        "name": "Steg 32",
+        "description": "Restaurand and Lounge. Elegant lakeside space with a terrace prepaing local and internation dishes, plus wine and cocktails.",
+        "country": "DE",
+        "postal_code": "82211",
+        "address": "Summerstrasse 32",
+        "webpage": "https://www.steg32.de/kontakt",
+        "phone_number": "08152 9687100"
+    },
+    {
+        "name": "Seaside Sushi & Sake",
+        "description": "Sushi, maki and sashimi plates, plus soups, tempura and gyoza dumplings, at a simple venue.",
+        "country": "DE",
+        "postal_code": "82211",
+        "address": "Mühlfelderstr. 16",
+        "webpage": "http://www.sushi-seaside.de",
+        "phone_number": "08152 3964222"
+    },
+    {
+        "name": "Pier 48",
+        "description": "Bright, contemporary venue with a wooden patio, offering Mediterranean and international fare. Dine-in, Curbside pickup. No delivery.",
+        "country": "DE",
+        "postal_code": "82211",
+        "address": "Seestr. 48",
+        "webpage": "https://pier48.de",
+        "phone_number": "08152 989464"
+    },
+    {
+        "name": "Nefis Döner Bistro",
+        "description": "Small restaurant and takeaway service dedicated to the cult of Döner. Lots of ingredients available. Cheap. Nice. Jammy.",
+        "country": "DE",
+        "postal_code": "82211",
+        "address": "Seestr.35",
+        "webpage": "",
+        "phone_number": "08152 9149289"
+    },
+    {
+        "name": "La Dolce Vita",
+        "description": "Pizza, pasta and Italian seafood in an eatery with a waterfront terrace and views of a lake jetty.",
+        "country": "DE",
+        "postal_code": "82211",
+        "address": "Seestr. 52",
+        "webpage": "https://www.ristorante-la-dolce-vita.com/",
+        "phone_number": "08152 6805"
+    },
+    {
+        "name": "Restaurant Seespitz",
+        "description": "Pasta, grill dishes and beer in an elegant, contemporary restaurant with a lakefront terrace.",
+        "country": "DE",
+        "postal_code": "82211",
+        "address": "Mühlfeld 2",
+        "webpage": "http://www.seespitz-ammersee.de/",
+        "phone_number": "08152 4849654"
+    },
+    {
+        "name": "Indische Ganpati Herrsching",
+        "description": "Indian restaurant, with original Indian specialties, being as hot as in India.",
+        "country": "DE",
+        "postal_code": "82211",
+        "address": "Zum Landungssteg 1",
+        "webpage": "https://ganpati-herrsching.de/",
+        "phone_number": "08152 3962545"
+    },
+    {
+        "name": "Volcano Grill",
+        "description": "Grill terrace restaurant, hidden in a place no one would expect to find a restaurant, I can't even imagine that was a restaurant... I wonder how they make a living...",
+        "country": "DE",
+        "postal_code": "82211",
+        "address": "Somewhere there",
+        "webpage": "https://www.example.com/the-void",
+        "phone_number": "8152 000000"
+    },
+    {
+        "name": "Matos Fischladen",
+        "description": "Takeaway fish snacks and sandwiches. Fresh fish from who knows where... but it seems tasty... Isn't it pork looking like fish?",
+        "country": "DE",
+        "postal_code": "82211",
+        "address": "Summerstr. 22",
+        "webpage": "",
+        "phone_number": "08152 1375"
+    },
+    {
+        "name": "Andechser Hof",
+        "description": "Seriously? They serve food to all schools in the neighbourhood, no wonder why every other child wants to go back home for lunch.",
+        "country": "DE",
+        "postal_code": "82211",
+        "address": "Zum Landungssteg 1",
+        "webpage": "",
+        "phone_number": "08152 96810"
+    },
+    {
+        "name": "IPHO Vietnamese Cuisine",
+        "description": "Well care, modern looking Vietnamese restaurant, with a large variety of dishes.",
+        "country": "DE",
+        "postal_code": "82211",
+        "address": "Bahnhofstr. 20",
+        "webpage": "",
+        "phone_number": "08152 9986199"
+    },
+    {
+        "name": "See Heimat",
+        "description": "Tiny restaurant with a large terrace, serving a very limited menu of Bavarian food and beer. It's close to the lake. And they smile more than in the average German restaurants.",
+        "country": "DE",
+        "postal_code": "82211",
+        "address": "Madeleine-Ruoff-Straße 33",
+        "webpage": "https://see-heimat.bayern",
+        "phone_number": "08152 9172382"
+    },
+    {
+        "name": "Fischsemmel König",
+        "description": "Yet another takeaway post, offering fish sandwiches. They are jammy.",
+        "country": "DE",
+        "postal_code": "82211",
+        "address": "Summerstr. 22",
+        "webpage": "",
+        "phone_number": "08152 1375"
+    },
+    {
+        "name": "De Victorie",
+        "description": "Very modern restaurant, with seafood and classic Belgian food. Nice surroundings, great for a walk after lunch.",
+        "country": "BE",
+        "postal_code": "3210",
+        "address": "Kerkdreef 1",
+        "webpage": "resto.be",
+        "phone_number": "+32 16888286"
+    },
+    {
+        "name": "Tuincafé 'In den Hof'",
+        "description": "More a bar than a restaurant, but they serve food too. Honestly, with all the good restaurants in the neighbourhood, I wonder why Google list this one almost at the top. I was here long ago.",
+        "country": "BE",
+        "postal_code": "3210",
+        "address": "Pastorijstraat 1",
+        "webpage": "",
+        "phone_number": "+32 497549246"
+    },
+    {
+        "name": "Naroj",
+        "description": "Google says this is a restaurant. But look at the photos... Not sure what it looks like.",
+        "country": "BE",
+        "postal_code": "3210",
+        "address": "Gemeentestraat 65",
+        "webpage": "http://www.narojlinden.be/",
+        "phone_number": "+32 479 94 85 13"
+    },
+    {
+        "name": "De frietverslinder BV",
+        "description": "Fried food, all sorts, I passed by the front of this place for years and never thought it was a restaurant. But the photos show food. So it has to be.",
+        "country": "BE",
+        "postal_code": "3210",
+        "address": "Martelarenplaats 4",
+        "webpage": "",
+        "phone_number": ""
+    },
+    {
+        "name": "Barba",
+        "description": "I had lunch and dinner here a lot, it's in Leuven. It's expensive. But they cook really good. I don't know what else to say. I just discovered that most of the restaurants listed in Google don't have a description. Unbelievable.",
+        "country": "BE",
+        "postal_code": "3000",
+        "address": "Mechelsestraat 22",
+        "webpage": "resto.be/barba",
+        "phone_number": "+32 16606544"
+    },
+    {
+        "name": "EED",
+        "description": "Small cozy restaurant, serving Belgian specialties, and making the stay a pleasure. If it's really the one I think it is.",
+        "country": "BE",
+        "postal_code": "3000",
+        "address": "Vaartstraat 14",
+        "webpage": "",
+        "phone_number": "+32 16190614"
+    },
+    {
+        "name": "Lust Bold Bistro",
+        "description": "Another nice looking restaurant in the area of Leuven, serving international dishes and Belgian specialties. In Summer we like to do grill.",
+        "country": "BE",
+        "postal_code": "82211",
+        "address": "Wieringstraat 14",
+        "webpage": "https://www.lustboldbistro.com/reserveer",
+        "phone_number": "+32 16231223"
+    }
+]

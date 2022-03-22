@@ -7,8 +7,9 @@ from fastapi_jwt_auth.exceptions import AuthJWTException
 from starlette.middleware.cors import CORSMiddleware
 
 from backend import deps
-from backend.apps.restaurants import restaurants_router
-from backend.apps.users import users_router
+from backend.restaurants import restaurants_router
+from backend.reviews import reviews_router
+from backend.users import users_router
 
 
 tags_metadata = [
@@ -40,11 +41,15 @@ app = FastAPI(
     openapi_tags=tags_metadata,
 )
 
-origins = ["http://localhost:3000", "https://rest.aurant.reviews"]
+origins = [
+    "http://localhost:3000",  # When frontend runs from cmd line.
+    "http://frontend:3000",  # When frontend runs via Docker.
+    "https://res.taurant.reviews"  # When frontend runs in production.
+]
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=origins,
+    allow_origins=["*"],
     allow_methods=["*"],
     allow_headers=["*"],
 )
@@ -72,6 +77,12 @@ kwds = {"dependencies": [Depends(deps.check_jwt)]}
 
 app.include_router(users_router, tags=["Users"])
 app.include_router(restaurants_router, tags=["Restaurants"], **kwds)
+app.include_router(reviews_router, tags=["Reviews"], **kwds)
+
+
+@app.get("/")
+def main():
+    return {"status": "ok"}
 
 
 # --------------------------------------
